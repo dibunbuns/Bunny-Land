@@ -1,0 +1,42 @@
+.waffle {
+  width: 200px;
+  height: auto;
+}
+img {
+  width: 200px;
+  height: 200px;
+}
+
+header {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+#random {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: aliceblue;
+  padding: 40px;
+}
+.character {
+  max-width: 200px;
+}
+
+#quote {
+  background-color: antiquewhite;
+  padding: 40px;
+}
+#signed {
+  font-weight: bold;
+}

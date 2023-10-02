@@ -3,9 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>All About Moi! (and The Odin Project)</header>
+    <header>
+      <h1>All About Moi!</h1>
+      <h2>Brought to you by the Odin Project</h2>
+      <nav class="nav">
+        <li>
+          <a href="https://github.com/dibunbuns">See my other repositories!</a>
+        </li>
+        <li>
+          <a href="https://dibunbuns.github.io/Pokemon/"
+            >Check out my Pokemon Game!</a
+          >
+        </li>
+        <li><a href="Contact.html">Contact</a></li>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h3>
+        Sign up for my oh so real News letter. You may receive spam mail idk.
+      </h3>
+      <img
+        class="waffle"
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Oolong_the_Rabbit%27s_last_performance_%282003%29.jpg"
+        alt="bunny with waffle on head"
+      />
+      <form id="form">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="email@email.com"
+        />
+        <button
+          id="submit"
+          onclick="redirect(this)"
+          value="https://youtu.be/oHg5SJYRHA0?si=NQk95h7e10G6Bp74"
+        >
+          ClIcK mE!!
+        </button>
+      </form>
+    </section>
+
+    <section id="random">
+      <h2>Chose Your Character!</h2>
+      <div class="character">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Thumper_Bambi_Screenshot.png"
+          alt="thumper"
+        />
+        <div class="name">Thumper</div>
+      </div>
+      <div class="character">
+        <img
+          src="https://static.onecms.io/wp-content/uploads/sites/6/2016/03/judy-hopps_0.jpg"
+          alt="JudyHopps"
+        />
+        <div class="name">Officer Judy Hopps</div>
+      </div>
+      <div class="character">
+        <img
+          src="https://static.wikia.nocookie.net/heroes-and-villain/images/f/f1/E._Aster_Bunnymund/revision/latest?cb=20200124222420"
+          alt="Bunnymund"
+        />
+        <div class="name">Bunnymund</div>
+      </div>
+    </section>
+
+    <section id="quote">
+      <p>"i don't know what im doing" <span id="signed">-me.</span></p>
+    </section>
+
+    <section id="CLICKME">
+      <p class="desperation">Plz sign up here uwu</p>
+      <p class="attempt">
+        you only have to click that shiny button (Insert emoji)
+      </p>
+      <button id="final_button">CLICK ME!!</button>
+    </section>
+
+    <script>
+      function redirect(link) {
+        window.open(link.value);
+      }
+    </script>
   </body>
 </html>
