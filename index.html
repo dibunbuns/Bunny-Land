@@ -8,19 +8,33 @@
   </head>
   <body>
     <header>
-      <h1>All About Moi!</h1>
-      <h2>Brought to you by the Odin Project</h2>
-      <nav class="nav">
-        <li>
-          <a href="https://github.com/dibunbuns">See my other repositories!</a>
-        </li>
-        <li>
-          <a href="https://dibunbuns.github.io/Pokemon/"
-            >Check out my Pokemon Game!</a
-          >
-        </li>
-        <li><a href="Contact.html">Contact</a></li>
-      </nav>
+      <div class="trim">
+        <img
+          src="https://cdn2.vectorstock.com/i/1000x1000/36/31/cute-rabbit-in-a-pumpkin-with-leaves-and-bats-vector-26863631.jpg"
+          alt="bunny in pumpkin"
+          class="logo"
+        />
+      </div>
+      <div class="bar">
+        <div class="left">
+          <h1>Bunny Land</h1>
+          <p>Brought to you by the Odin Project</p>
+        </div>
+        <nav class="nav">
+          <li>
+            <a href="https://github.com/dibunbuns"
+              >See my other repositories!</a
+            >
+          </li>
+          <li>
+            <a href="https://dibunbuns.github.io/Pokemon/"
+              >Check out my Pokemon Game!</a
+            >
+          </li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="sources.html">Image Sources</a></li>
+        </nav>
+      </div>
     </header>
 
     <section id="hero">
@@ -50,27 +64,29 @@
     </section>
 
     <section id="random">
-      <h2>Chose Your Character!</h2>
-      <div class="character">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Thumper_Bambi_Screenshot.png"
-          alt="thumper"
-        />
-        <div class="name">Thumper</div>
-      </div>
-      <div class="character">
-        <img
-          src="https://static.onecms.io/wp-content/uploads/sites/6/2016/03/judy-hopps_0.jpg"
-          alt="JudyHopps"
-        />
-        <div class="name">Officer Judy Hopps</div>
-      </div>
-      <div class="character">
-        <img
-          src="https://static.wikia.nocookie.net/heroes-and-villain/images/f/f1/E._Aster_Bunnymund/revision/latest?cb=20200124222420"
-          alt="Bunnymund"
-        />
-        <div class="name">Bunnymund</div>
+      <h2 class="subtitle">Choose Your Character!</h2>
+      <div class="random">
+        <div class="character">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Thumper_Bambi_Screenshot.png"
+            alt="thumper"
+          />
+          <div class="name">Thumper</div>
+        </div>
+        <div class="character">
+          <img
+            src="https://static.onecms.io/wp-content/uploads/sites/6/2016/03/judy-hopps_0.jpg"
+            alt="JudyHopps"
+          />
+          <div class="name">Officer Judy Hopps</div>
+        </div>
+        <div class="character">
+          <img
+            src="https://pm1.aminoapps.com/6266/fe5f84873561eff08f5c48cc90a8fd6342ec11d9_hq.jpg"
+            alt="Bunnymund"
+          />
+          <div class="name">Bunnymund</div>
+        </div>
       </div>
     </section>
 
@@ -83,8 +99,23 @@
       <p class="attempt">
         you only have to click that shiny button (Insert emoji)
       </p>
-      <button id="final_button">CLICK ME!!</button>
+      <button
+        id="final_button"
+        onclick="redirect(this)"
+        value="https://youtu.be/oHg5SJYRHA0?si=NQk95h7e10G6Bp74"
+      >
+        CLICK ME!!
+      </button>
     </section>
+
+    <footer>
+      <a
+        class="footerauthor"
+        href="https://github.com/dibunbuns"
+        target="_blank"
+        >Webpage by Dibunbuns</a
+      >
+    </footer>
 
     <script>
       function redirect(link) {
