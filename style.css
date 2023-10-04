@@ -1,12 +1,11 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
-
-.waffle {
-  width: 200px;
-  height: auto;
 }
 img {
   width: 200px;
@@ -59,6 +58,30 @@ a {
 
 #hero {
   background-color: thistle;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  gap: 64px;
+  /*i would like to make sure no spillover happens*/
+}
+.heroText {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+}
+#hero img {
+  height: 300px;
+  width: auto;
+  border: 3px solid transparent;
+  background: linear-gradient(to top, #592cd3, #f2dbfc) border-box;
+}
+#hero h3 {
+  font-size: 32px;
+}
+#hero p {
+  font-size: 18px;
+  margin: 8px;
 }
 
 #random {
@@ -136,4 +159,69 @@ footer {
     align-items: flex-end;
     margin: 0;
   }
+}
+
+/* CSS */
+button {
+  align-items: center;
+  background-color: #f2dbfc;
+  background-position: 0 0;
+  border: 2px solid #f2dbfc;
+  border-radius: 11px;
+  box-sizing: border-box;
+  color: #592cd3;
+  cursor: pointer;
+  /* display: flex; */
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 33.4929px;
+  list-style: outside none;
+  padding: 2px 12px;
+  text-align: left;
+  text-decoration: none;
+  text-shadow: none;
+  text-underline-offset: 1px;
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  word-break: break-word;
+}
+
+button:active,
+button:hover,
+button:focus {
+  outline: 0;
+}
+
+button:active {
+  background-color: #f2dbfc;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #592cd3;
+}
+
+button:hover {
+  background-color: #f2dbfc;
+  border-color: #592cd3;
+}
+
+button:active:hover,
+button:focus:hover,
+button:focus {
+  background-color: #f2dbfc;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+  color: #592cd3;
+}
+[type="email"] {
+  align-items: center;
+  background-color: #f2dbfc;
+  border: 2px solid #592cd3;
+  border-radius: 9px;
+  box-sizing: border-box;
+  cursor: text;
+  font-size: 1rem;
+  line-height: 30px;
+  padding: 2px 12px;
+  margin: 12px 0px;
 }

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+    </style>
   </head>
   <body>
     <header>
@@ -36,29 +39,31 @@
     </header>
 
     <section id="hero">
-      <h3>
-        Sign up for my oh so real News letter. You may receive spam mail idk.
-      </h3>
+      <div class="heroText">
+        <h3>Sign up for my oh so real News letter.</h3>
+        <p>You may receive spam mail idk. I can't make any promises.</p>
+        <p>Do it for the waffle bun.</p>
+        <form id="form">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="email@email.com"
+          />
+          <button
+            id="submit"
+            onclick="redirect(this)"
+            value="https://youtu.be/oHg5SJYRHA0?si=NQk95h7e10G6Bp74"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
       <img
         class="waffle"
         src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Oolong_the_Rabbit%27s_last_performance_%282003%29.jpg"
         alt="bunny with waffle on head"
       />
-      <form id="form">
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="email@email.com"
-        />
-        <button
-          id="submit"
-          onclick="redirect(this)"
-          value="https://youtu.be/oHg5SJYRHA0?si=NQk95h7e10G6Bp74"
-        >
-          Submit
-        </button>
-      </form>
     </section>
 
     <section id="random">
